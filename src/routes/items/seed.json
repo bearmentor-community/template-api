@@ -1,0 +1,17 @@
+[
+  {
+    "slug": "a-brand-new-item",
+    "title": "A Brand New Item",
+    "html": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo asperiores laborum corporis maxime debitis. Repellendus dolores veritatis, iure similique rerum, in qui quas modi deserunt officia nulla tenetur iusto provident.</p>"
+  },
+  {
+    "slug": "best-item-in-the-world",
+    "title": "Best Item in the World",
+    "html": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo asperiores laborum corporis maxime debitis. Repellendus dolores veritatis, iure similique rerum, in qui quas modi deserunt officia nulla tenetur iusto provident.</p>"
+  },
+  {
+    "slug": "classic-good-item",
+    "title": "Classic Good Item",
+    "html": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo asperiores laborum corporis maxime debitis. Repellendus dolores veritatis, iure similique rerum, in qui quas modi deserunt officia nulla tenetur iusto provident.</p>"
+  }
+]

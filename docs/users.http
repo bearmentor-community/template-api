@@ -1,0 +1,22 @@
+### Seed users
+POST http://localhost:3000/users/seed
+
+### Remove all users
+DELETE http://localhost:3000/users
+Authorization: Bearer {token}
+
+### Get all users
+GET http://localhost:3000/users
+
+### Get one user by username
+GET http://localhost:3000/users/ironman
+
+### Login user
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "tony@stark.com",
+  "password": "ironman0"
+}
+

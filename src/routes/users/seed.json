@@ -1,0 +1,74 @@
+[
+  {
+    "username": "bot",
+    "name": "Robot",
+    "email": "bot@robot.com",
+    "password": "robot0",
+    "avatarUrl": "images/default.jpg",
+    "bio": "_"
+  },
+  {
+    "username": "ironman",
+    "name": "Tony Stark",
+    "email": "tony@stark.com",
+    "password": "ironman0",
+    "avatarUrl": "images/ironman.png",
+    "bio": "Genius"
+  },
+  {
+    "username": "captainamerica",
+    "name": "Steve Rogers",
+    "email": "captain@america.gov",
+    "password": "captaincaptain0",
+    "avatarUrl": "images/captainamerica.png",
+    "bio": "Hope"
+  },
+  {
+    "username": "spiderman",
+    "name": "Peter Parker",
+    "email": "peter@spiderman.com",
+    "password": "spiderspider0",
+    "avatarUrl": "images/spiderman.png",
+    "bio": "Up up and away!"
+  },
+  {
+    "username": "blackwidow",
+    "name": "Natasha Romanov",
+    "email": "natasha@shield.org",
+    "password": "blackwidow0",
+    "avatarUrl": "images/blackwidow.png",
+    "bio": "Secret"
+  },
+  {
+    "username": "thor",
+    "name": "Thor Odinson",
+    "email": "thor@asgard.org",
+    "password": "asgardians0",
+    "avatarUrl": "images/thor.png",
+    "bio": "ANOTHER!"
+  },
+  {
+    "username": "captainmarvel",
+    "name": "Carol Danvers",
+    "email": "captain@universe.com",
+    "password": "captainmarvel0",
+    "avatarUrl": "images/captainmarvel.png",
+    "bio": "Universe"
+  },
+  {
+    "username": "blackpanther",
+    "name": "T'Challa",
+    "email": "king@wakanda.gov",
+    "password": "blackpanther0",
+    "avatarUrl": "images/blackpanther.png",
+    "bio": "Wakanda Forever!"
+  },
+  {
+    "username": "drstrange",
+    "name": "Dr. Stephen Strange",
+    "email": "strange@kamartaj.org",
+    "password": "drstrange0",
+    "avatarUrl": "images/drstrange.png",
+    "bio": "Time is Power"
+  }
+]

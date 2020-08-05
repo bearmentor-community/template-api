@@ -1,0 +1,7 @@
+{
+  "name": "template-API",
+  "description": "Template API",
+  "repository": "https://github.com/azobu-projects/template-api",
+  "keywords": ["template", "api"],
+  "image": "heroku/nodejs"
+}

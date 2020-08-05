@@ -1,0 +1,9 @@
+build:
+  languages:
+    - nodejs
+  pre:
+    - yarn test
+  post:
+    - echo 'API installed'
+run:
+  web: yarn start
