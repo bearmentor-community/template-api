@@ -3,7 +3,7 @@ const meta = require('./package.json')
 
 module.exports = {
   /**
-   * Application Configuration
+   * Application
    * http://pm2.keymetrics.io/docs/usage/application-declaration
    */
   apps: [
@@ -16,15 +16,7 @@ module.exports = {
       ignore_watch: ['node_modules', 'public'],
       watch_options: { followSymlinks: false },
       env: {
-        COMMON_VARIABLE: 'true',
-        EXPRESS_APP_API_URL: process.env.EXPRESS_APP_API_URL,
-        EXPRESS_APP_WEB_URL: process.env.EXPRESS_APP_WEB_URL,
-        EXPRESS_APP_API_KEY: process.env.EXPRESS_APP_API_KEY,
-        EXPRESS_APP_MONGODB_URI: process.env.EXPRESS_APP_MONGODB_URI,
-        EXPRESS_APP_JWT_SECRET: process.env.EXPRESS_APP_JWT_SECRET,
-        EXPRESS_APP_MAILGUN_API_KEY: process.env.EXPRESS_APP_MAILGUN_API_KEY,
-        EXPRESS_APP_MAILGUN_DOMAIN: process.env.EXPRESS_APP_MAILGUN_DOMAIN,
-        EXPRESS_APP_MAILGUN_SENDER: process.env.EXPRESS_APP_MAILGUN_SENDER
+        COMMON_VARIABLE: 'true'
       },
       env_dev: {
         NODE_ENV: 'development'
@@ -39,7 +31,7 @@ module.exports = {
   ],
 
   /**
-   * Deployment section
+   * Deployment
    * http://pm2.keymetrics.io/docs/usage/deployment
    */
   deploy: {
