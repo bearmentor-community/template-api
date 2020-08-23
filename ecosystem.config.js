@@ -50,7 +50,8 @@ module.exports = {
       repo: meta.repository.url,
       path: '/var/www/template-api/staging',
       'pre-deploy-local': 'echo "Ready to deploy staging app"',
-      'post-deploy': 'yarn && pm2 startOrRestart ecosystem.js --env staging',
+      'post-deploy':
+        'yarn && pm2 startOrRestart ecosystem.config.js --env staging',
       env: { NODE_ENV: 'staging' }
     },
     production: {
@@ -60,7 +61,8 @@ module.exports = {
       repo: meta.repository.url,
       path: '/var/www/template-api/production',
       'pre-deploy-local': '"Ready to deploy production app"',
-      'post-deploy': 'yarn && pm2 startOrRestart ecosystem.js --env production',
+      'post-deploy':
+        'yarn && pm2 startOrRestart ecosystem.config.js --env production',
       env: { NODE_ENV: 'production' }
     }
   }
