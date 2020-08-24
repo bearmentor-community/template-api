@@ -14,7 +14,16 @@ You should clone all of the required repositories:
 
 - JavaScript
 - Node.js, npm, Yarn
+- Nodemon
+- PM2
 - Express
+- Multer
+- MongoDB, Mongoose
+- PostgreSQL, Sequelize
+- bcrypt
+- crypto
+- dotenv-flow
+- JSON Web Token (JWT)
 - Jest
 - Sinon
 
