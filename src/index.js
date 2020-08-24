@@ -83,6 +83,7 @@ const server = http.createServer(app)
  */
 
 server.listen(port, () => {
+  console.info(`NODE_ENV: ${process.env.NODE_ENV}`)
   console.info(`API_URL: ${os.hostname()}:${port}`)
 })
 server.on('error', onError)
