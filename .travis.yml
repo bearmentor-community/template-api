@@ -3,8 +3,10 @@ node_js:
   - 12
 before_script:
   - yarn
-script: yarn test
+script:
+  - yarn test
+  - yarn pm2:deploy
 cache:
   yarn: true
   directories:
-    - 'node_modules'
+    - "node_modules"
