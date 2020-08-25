@@ -6,7 +6,6 @@ before_script:
   - yarn
 script:
   - yarn test
-  - yarn pm2:deploy
 cache:
   yarn: true
   directories:
