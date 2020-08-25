@@ -6,7 +6,9 @@ before_script:
 script:
   - yarn test
   - yarn pm2:deploy
+addons:
+  ssh_known_hosts: $SERVER_HOST
 cache:
   yarn: true
   directories:
-    - "node_modules"
+    - 'node_modules'
