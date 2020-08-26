@@ -11,14 +11,14 @@ module.exports = {
       name: meta.name,
       script: meta.main,
       node_args: '--harmony',
-      watch: [meta.main],
+      watch: ['src/'],
       watch_delay: 1000,
       ignore_watch: ['node_modules', 'public'],
       watch_options: { followSymlinks: false },
       env: {
         COMMON_VARIABLE: 'true'
       },
-      env_dev: {
+      env_development: {
         NODE_ENV: 'development'
       },
       env_staging: {
