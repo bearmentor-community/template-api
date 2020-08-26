@@ -11,7 +11,11 @@ module.exports = async (req, res) => {
         message: 'User is successfully authenticated',
         data: {
           accessToken: accessToken,
-          user: req.user
+          user: {
+            username: req.user.username,
+            email: req.user.email,
+            name: req.user.name
+          }
         }
       })
     } else {
