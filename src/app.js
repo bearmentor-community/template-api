@@ -10,6 +10,7 @@ const authRouter = require('./routes/auth')
 const usersRouter = require('./routes/users')
 const itemsRouter = require('./routes/items')
 const imagesRouter = require('./routes/images')
+const searchRouter = require('./routes/search')
 
 const app = express()
 
@@ -25,5 +26,6 @@ app.use('/auth', authRouter)
 app.use('/users', usersRouter)
 app.use('/items', itemsRouter)
 app.use('/images', imagesRouter)
+app.use('/search', searchRouter)
 
 module.exports = app
