@@ -1,17 +1,32 @@
 [
   {
-    "slug": "a-brand-new-item",
-    "title": "A Brand New Item",
-    "html": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo asperiores laborum corporis maxime debitis. Repellendus dolores veritatis, iure similique rerum, in qui quas modi deserunt officia nulla tenetur iusto provident.</p>"
+    "slug": "iron-man-suit",
+    "title": "Iron Man Suit",
+    "html": "<p><a href='/ironman'>Tony Stark</a>'s Iron Man suits are each unique in design and purpose. They are made of incredibly-strong, materials bolstered by a force field. Every suit has a self-contained environment, assorted onboard weapons systems, enhanced strength, flight, and various communications arrays and sensors, such as radar and radio.</p><p>Furthermore, they typically have multiple power sources including a secondary solar energy collection function in the event that conventional recharging methods are unavailable. Earlier versions of the armor could also fold virtually flat, allowing Stark to store them in his bullet-proof briefcase.</p>"
   },
   {
-    "slug": "best-item-in-the-world",
-    "title": "Best Item in the World",
-    "html": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo asperiores laborum corporis maxime debitis. Repellendus dolores veritatis, iure similique rerum, in qui quas modi deserunt officia nulla tenetur iusto provident.</p>"
+    "slug": "captain-americas-shield",
+    "title": "Captain America's shield",
+    "html": "<p><a href='/captainamerica'>Captain America</a>'s shield is is the primary defensive and offensive piece of equipment used by and emblematic of Captain America. Over the years, Captain America has used several shields of varying composition and design.</p>"
   },
   {
-    "slug": "classic-good-item",
-    "title": "Classic Good Item",
-    "html": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo asperiores laborum corporis maxime debitis. Repellendus dolores veritatis, iure similique rerum, in qui quas modi deserunt officia nulla tenetur iusto provident.</p>"
+    "slug": "spider-mans-web-shooters",
+    "title": "Spider-Man's Web-Shooters",
+    "html": "<p><a href='/spiderman'>Spider-Man</a>'s web-shooters are twin devices, which he wears on his wrists beneath the gauntlets of his costume, that can shoot thin strands of a special web fluid (the chemical composition of which is not known, but which is described as being a shear-thinning substance) at high pressure.</p>"
+  },
+  {
+    "slug": "mjolnir",
+    "title": "Mjolnir",
+    "html": "<p>Mjolnir is a powerful enchanted war-hammer forged by the Dwarves for the Asgardian Royal Family. Typically depicted as a large, square-headed gray sledgehammer, with a short, round handle wrapped in brown leather, culminating in a looped lanyard. Used by <a href='/thor'>Thor</a> for a very long time.</p>"
+  },
+  {
+    "slug": "eye-of-agamotto",
+    "title": "Eye of Agamotto",
+    "html": "<p>The Eye of Agamotto was a powerful relic created by Agamotto, the first Sorcerer Supreme, to contain the power of the Time Stone inside it. It has been passed down the long line of Sorcerers Supreme that followed him. The Eye also has the ability to manipulate the flow of time and was used by <a href='/drstrange'>Doctor Strange</a>.</p>"
+  },
+  {
+    "slug": "panther-habit",
+    "title": "Panther Habit",
+    "html": "<p>The Panther Habit is a uniquely crafted Vibranium-weave suit used by the <a href='/blackpanther'>Black Panther</a>, the protector of Wakanda. It has been worn by the King of Wakanda for generations since the time of Bashenga, adopting the mantle of \"Black Panther\" to be Wakanda's protector. Centuries later, the Habit was adopted by King T'Chaka.</p>"
   }
 ]
