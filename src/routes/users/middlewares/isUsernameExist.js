@@ -2,7 +2,11 @@ const User = require('../model')
 
 module.exports = async (req, res, next) => {
   const username = req.params.username
-  const user = await User.findOne({ username: username })
+
+  // Find one user by username, case insensitive
+  const user = await User.findOne({
+    username: { $regex: new RegExp('^' + username + '$', 'i') }
+  })
 
   if (user) {
     req.user = user
