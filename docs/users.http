@@ -10,13 +10,3 @@ GET http://localhost:3000/users
 
 ### Get one user by username
 GET http://localhost:3000/users/ironman
-
-### Login user
-POST http://localhost:3000/auth/login
-Content-Type: application/json
-
-{
-  "email": "tony@stark.com",
-  "password": "ironman0"
-}
-

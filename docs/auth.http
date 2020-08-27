@@ -1,0 +1,12 @@
+### Login user
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "tony@stark.com",
+  "password": "ironman0"
+}
+
+### Get authenticated user profile
+GET http://localhost:3000/auth/profile
+Authorization: Bearer token

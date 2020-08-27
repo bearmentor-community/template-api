@@ -3,6 +3,7 @@ const router = express.Router()
 
 const auth = require('./middlewares')
 
+router.get('/profile', auth.isAuthenticated, auth.getAuthenticatedUser)
 router.post('/register', auth.isRegistered, auth.register)
 router.post(
   '/login',
