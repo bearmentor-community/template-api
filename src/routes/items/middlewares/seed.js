@@ -11,7 +11,14 @@ module.exports = async (req, res) => {
     })
   } else {
     try {
-      await Item.insertMany(seedItemsData)
+      // Use forEach, not insert, because have to update imageUrl
+      await seedItemsData.forEach(async (item) => {
+        await Item.create({
+          ...item,
+          imageUrl: `${process.env.EXPRESS_APP_API_URL}/${item.imageUrl}`
+        })
+      })
+
       res.status(200).send({
         message: 'Seed initial items completed'
       })

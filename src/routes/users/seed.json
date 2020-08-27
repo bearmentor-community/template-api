@@ -4,7 +4,7 @@
     "name": "Robot",
     "email": "bot@robot.com",
     "password": "robot0",
-    "avatarUrl": "images/default.jpg",
+    "avatarUrl": "avatars/default.jpg",
     "bio": "_"
   },
   {
@@ -12,7 +12,7 @@
     "name": "Tony Stark",
     "email": "tony@stark.com",
     "password": "ironman0",
-    "avatarUrl": "images/ironman.png",
+    "avatarUrl": "avatars/ironman.png",
     "bio": "Genius"
   },
   {
@@ -20,7 +20,7 @@
     "name": "Steve Rogers",
     "email": "captain@america.gov",
     "password": "captaincaptain0",
-    "avatarUrl": "images/captainamerica.png",
+    "avatarUrl": "avatars/captainamerica.png",
     "bio": "Hope"
   },
   {
@@ -28,7 +28,7 @@
     "name": "Peter Parker",
     "email": "peter@spiderman.com",
     "password": "spiderspider0",
-    "avatarUrl": "images/spiderman.png",
+    "avatarUrl": "avatars/spiderman.png",
     "bio": "Up up and away!"
   },
   {
@@ -36,7 +36,7 @@
     "name": "Natasha Romanov",
     "email": "natasha@shield.org",
     "password": "blackwidow0",
-    "avatarUrl": "images/blackwidow.png",
+    "avatarUrl": "avatars/blackwidow.png",
     "bio": "Secret"
   },
   {
@@ -44,7 +44,7 @@
     "name": "Thor Odinson",
     "email": "thor@asgard.org",
     "password": "asgardians0",
-    "avatarUrl": "images/thor.png",
+    "avatarUrl": "avatars/thor.png",
     "bio": "ANOTHER!"
   },
   {
@@ -52,7 +52,7 @@
     "name": "Carol Danvers",
     "email": "captain@universe.com",
     "password": "captainmarvel0",
-    "avatarUrl": "images/captainmarvel.png",
+    "avatarUrl": "avatars/captainmarvel.png",
     "bio": "Universe"
   },
   {
@@ -60,7 +60,7 @@
     "name": "T'Challa",
     "email": "king@wakanda.gov",
     "password": "blackpanther0",
-    "avatarUrl": "images/blackpanther.png",
+    "avatarUrl": "avatars/blackpanther.png",
     "bio": "Wakanda Forever!"
   },
   {
@@ -68,7 +68,7 @@
     "name": "Dr. Stephen Strange",
     "email": "strange@kamartaj.org",
     "password": "drstrange0",
-    "avatarUrl": "images/drstrange.png",
+    "avatarUrl": "avatars/drstrange.png",
     "bio": "Time is Power"
   }
 ]

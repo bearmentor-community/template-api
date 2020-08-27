@@ -30,7 +30,7 @@ const UserSchema = mongoose.Schema(
     },
     avatarUrl: {
       type: String,
-      default: `${process.env.EXPRESS_APP_API_URL}/images/default.jpg`
+      default: `${process.env.EXPRESS_APP_API_URL}/avatars/default.jpg`
     },
     bio: {
       type: String

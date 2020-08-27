@@ -12,6 +12,10 @@ const ItemSchema = mongoose.Schema(
     },
     html: {
       type: String
+    },
+    imageUrl: {
+      type: String,
+      default: `${process.env.EXPRESS_APP_API_URL}/images/`
     }
   },
   {

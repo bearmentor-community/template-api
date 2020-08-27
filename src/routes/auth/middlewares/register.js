@@ -24,7 +24,7 @@ module.exports = async (req, res) => {
       email: email,
       salt: salt,
       hash: hash,
-      avatarUrl: `${process.env.EXPRESS_APP_API_URL}/images/default.jpg`
+      avatarUrl: `${process.env.EXPRESS_APP_API_URL}/avatars/default.jpg`
     }
 
     // Create an actual user in the database
