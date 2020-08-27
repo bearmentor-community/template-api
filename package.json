@@ -14,7 +14,8 @@
     "pm2:delete": "pm2 delete all",
     "pm2:deploy:setup": "pm2 deploy ecosystem.config.js production setup",
     "pm2:deploy": "pm2 deploy ecosystem.config.js production",
-    "debug": "NODE_ENV=development nodemon src/index.js",
+    "dev": "NODE_ENV=development nodemon src/index.js",
+    "debug": "NODE_ENV=development DEBUG=express:* nodemon src/index.js",
     "test": "NODE_ENV=test jest",
     "lint": "eslint . --ext .js",
     "postinstall": "./setup.sh"
