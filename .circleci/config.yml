@@ -11,7 +11,7 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - "b8:01:c7:66:03:cc:e0:f8:44:9b:80:f8:bb:5a:9d:26"
+            - "54:d0:c4:d9:69:46:c7:f2:6a:9a:00:03:96:78:e0:fc"
       - run:
           name: Check Git branch
           command: echo "${CIRCLE_BRANCH}"
@@ -77,9 +77,6 @@ jobs:
       # Reuse the workspace from the previous job
       - attach_workspace:
           at: .
-      - add_ssh_keys:
-          fingerprints:
-            - "b8:01:c7:66:03:cc:e0:f8:44:9b:80:f8:bb:5a:9d:26"
       - restore_cache:
           keys:
             - yarn-deps-{{ checksum "yarn.lock" }}
