@@ -47,15 +47,29 @@ jobs:
             sudo apt update
             sudo apt install mongodb-org
             mongo localhost --eval 'db.serverStatus()'
+      - restore_cache:
+          keys:
+            - yarn-deps-{{ checksum "yarn.lock" }}
+            - yarn-deps
+      - node/install:
+          install-yarn: true
       - run:
-          name: Test
+          name: Test with Jest
           command: yarn test
   deploy:
     docker:
       - image: cimg/node:current
     steps:
       - checkout
-      - run: yarn pm2:deploy
+      - restore_cache:
+          keys:
+            - yarn-deps-{{ checksum "yarn.lock" }}
+            - yarn-deps
+      - node/install:
+          install-yarn: true
+      - run:
+          name: Deploy to production server
+          command: yarn pm2:deploy
 
 workflows:
   version: 2
