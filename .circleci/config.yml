@@ -51,8 +51,9 @@ jobs:
           keys:
             - yarn-deps-{{ checksum "yarn.lock" }}
             - yarn-deps
-      - node/install:
-          install-yarn: true
+      - run:
+          name: Install all dependencies
+          command: yarn install --production=false
       - run:
           name: Test with Jest
           command: yarn test
@@ -65,8 +66,9 @@ jobs:
           keys:
             - yarn-deps-{{ checksum "yarn.lock" }}
             - yarn-deps
-      - node/install:
-          install-yarn: true
+      - run:
+          name: Install all dependencies
+          command: yarn install --production=false
       - run:
           name: Deploy to production server
           command: yarn pm2:deploy
