@@ -56,6 +56,9 @@ jobs:
             - yarn-deps-{{ checksum "yarn.lock" }}
             - yarn-deps
       - run:
+          name: Lint files
+          command: yarn lint
+      - run:
           name: Test with Jest
           command: yarn test
   deploy:
