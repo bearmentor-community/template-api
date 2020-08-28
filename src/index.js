@@ -8,7 +8,6 @@ const app = require('./app')
 const debug = require('debug')('template-api:server')
 const http = require('http')
 const os = require('os')
-const { info } = require('console')
 
 /**
  * Normalize a port into a number, string, or false.
