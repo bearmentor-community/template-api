@@ -6,7 +6,7 @@ orbs:
 jobs:
   prepare-dependencies:
     docker:
-      - image: node:current-alpine
+      - image: cimg/node:current
     steps:
       - checkout
       - run:
@@ -29,7 +29,6 @@ jobs:
           paths:
             - .
       - run: node --version
-
   test:
     docker:
       # The primary container is an instance of the first image listed. The job's commands run in this container.
