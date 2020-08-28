@@ -1,6 +1,10 @@
-# ⚫ Template API
+# ⭕ Template API
 
-> Template description
+> Template API is a quick starter kit project to build a complete API using Node.js and Express.
+
+[![Website](https://img.shields.io/website-up-down-green-red/https/api.template.azobu.com.svg)](https://api.template.azobu.com)
+[![CircleCI Status](https://circleci.com/gh/azobu-projects/template-api.svg?style=svg)](https://circleci.com/gh/azobu-projects/template-api)
+![License](https://img.shields.io/github/license/azobu-projects/template-api)
 
 ## Repositories
 
