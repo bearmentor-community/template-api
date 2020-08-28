@@ -18,7 +18,6 @@ jobs:
             - yarn-deps
       - node/install:
           install-yarn: true
-      - run: node --version
       - save_cache:
           paths:
             - node_modules
@@ -29,6 +28,7 @@ jobs:
           root: .
           paths:
             - .
+      - run: node --version
 
   test:
     docker:
@@ -60,7 +60,7 @@ jobs:
 
 workflows:
   version: 2
-  build_and_test:
+  workflows:
     jobs:
       - prepare-dependencies
       - test:
@@ -69,7 +69,7 @@ workflows:
       - hold:
           type: approval
           requires:
-            - build
+            - prepare-dependencies
             - test
       - deploy:
           requires:
