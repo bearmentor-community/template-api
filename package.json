@@ -4,6 +4,11 @@
   "private": true,
   "main": "src/index.js",
   "scripts": {
+    "postinstall": "./setup.sh",
+    "dev": "NODE_ENV=development nodemon src/index.js",
+    "debug": "NODE_ENV=development DEBUG=express:* nodemon src/index.js",
+    "test": "NODE_ENV=test jest",
+    "lint": "eslint . --ext .js",
     "pm2:dev": "pm2 startOrGracefulReload ecosystem.config.js --env development",
     "pm2:staging": "pm2 startOrGracefulReload ecosystem.config.js --env staging",
     "pm2:production": "pm2 startOrGracefulReload ecosystem.config.js --env production",
@@ -12,13 +17,10 @@
     "pm2:flush": "pm2 flush template-api",
     "pm2:stop": "pm2 stop all",
     "pm2:delete": "pm2 delete all",
+    "pm2:deploy:staging:setup": "pm2 deploy ecosystem.config.js staging setup",
+    "pm2:deploy:staging": "export DEPLOY_BRANCH=$CIRCLE_BRANCH && pm2 deploy ecosystem.config.js staging",
     "pm2:deploy:setup": "pm2 deploy ecosystem.config.js production setup",
-    "pm2:deploy": "pm2 deploy ecosystem.config.js production",
-    "dev": "NODE_ENV=development nodemon src/index.js",
-    "debug": "NODE_ENV=development DEBUG=express:* nodemon src/index.js",
-    "test": "NODE_ENV=test jest",
-    "lint": "eslint . --ext .js",
-    "postinstall": "./setup.sh"
+    "pm2:deploy": "export DEPLOY_BRANCH=$CIRCLE_BRANCH && pm2 deploy ecosystem.config.js production"
   },
   "repository": {
     "type": "git",
