@@ -21,7 +21,7 @@ jobs:
       - run:
           name: Check SSH access
           command: |
-            ssh -q ${SERVER_USER}@${SERVER_HOST} exit
+            ssh -o "StrictHostKeyChecking=no" -q $SERVER_USER@$SERVER_HOST exit
             echo $?
             return $?
       - restore_cache:
