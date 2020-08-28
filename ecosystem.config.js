@@ -41,6 +41,7 @@ module.exports = {
       ref: 'origin/master',
       repo: meta.repository.url,
       path: '/var/www/template-api/staging',
+      ssh_options: 'StrictHostKeyChecking=no',
       'pre-deploy-local': 'echo "Ready to deploy staging app"',
       'post-deploy':
         'yarn && pm2 startOrRestart ecosystem.config.js --env staging',
@@ -52,6 +53,7 @@ module.exports = {
       ref: 'origin/master',
       repo: meta.repository.url,
       path: '/var/www/template-api/production',
+      ssh_options: 'StrictHostKeyChecking=no',
       'pre-deploy-local': '"Ready to deploy production app"',
       'post-deploy':
         'yarn && pm2 startOrRestart ecosystem.config.js --env production',
