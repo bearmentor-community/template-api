@@ -19,6 +19,8 @@ Sorted by priority:
 - Nodemon
 - PM2
 - Express
+- Morgan
+- dotenv-flow
 - Multer
 - MongoDB, Mongoose
 - PostgreSQL, Sequelize
@@ -34,8 +36,18 @@ Sorted by priority:
 - Google Cloud Platform
   - Google Compute Engine
   - Google Cloud Storage
+- Nginx
+- Let's Encrypt, Certbot
 - Cloudflare
 - Uniregistry
+
+Later:
+
+- TypeScript
+- Passport
+- OAuth
+- Redis
+- Docker
 
 ## Getting Startedf
 
