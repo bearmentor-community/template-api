@@ -72,9 +72,9 @@ jobs:
           keys:
             - yarn-deps-{{ checksum "yarn.lock" }}
             - yarn-deps
-      - run:
-          name: Disable strict host key checking
-          command: echo -e "Host $SERVER_HOST\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+      - add_ssh_keys:
+          fingerprints:
+            - 'b8:01:c7:66:03:cc:e0:f8:44:9b:80:f8:bb:5a:9d:26'
       - run:
           name: Deploy to production server
           command: yarn pm2:deploy
