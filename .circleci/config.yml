@@ -4,11 +4,14 @@ orbs:
   node: circleci/node@4.0.0
 
 jobs:
-  prepare-dependencies:
+  preparation:
     docker:
       - image: cimg/node:current
     steps:
       - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "b8:01:c7:66:03:cc:e0:f8:44:9b:80:f8:bb:5a:9d:26"
       - run:
           name: Check Git branch
           command: echo "${CIRCLE_BRANCH}"
@@ -74,13 +77,13 @@ jobs:
       # Reuse the workspace from the previous job
       - attach_workspace:
           at: .
+      - add_ssh_keys:
+          fingerprints:
+            - "b8:01:c7:66:03:cc:e0:f8:44:9b:80:f8:bb:5a:9d:26"
       - restore_cache:
           keys:
             - yarn-deps-{{ checksum "yarn.lock" }}
             - yarn-deps
-      - add_ssh_keys:
-          fingerprints:
-            - "b8:01:c7:66:03:cc:e0:f8:44:9b:80:f8:bb:5a:9d:26"
       - run:
           name: Deploy to production server
           command: yarn pm2:deploy
@@ -89,14 +92,14 @@ workflows:
   version: 2
   workflows:
     jobs:
-      - prepare-dependencies
+      - preparation
       - test:
           requires:
-            - prepare-dependencies
+            - preparation
       - hold:
           type: approval
           requires:
-            - prepare-dependencies
+            - preparation
             - test
       - deploy:
           requires:
