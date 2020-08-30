@@ -58,6 +58,8 @@ All the backend/API dependencies sorted by priority:
 - JSON Web Token (JWT) — Compact URL-safe means of representing claims
   - `jsonwebtoken` — JWT implementationm, symmetric and asymmetric
 - HTTPie — Command-line HTTP client that will make you smile
+- Mailgun — Transactional email API service for developers
+  - Nodemailer — Module for Node.js to send emails
 - ESLint — Pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript
   - Prettier — Opinionated code formatter and extension for code editor
   - Standard — JavaScript style guide, linter, and formatter
