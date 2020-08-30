@@ -88,11 +88,7 @@ workflows:
       - test:
           requires:
             - preparation
-      - hold:
-          type: approval
+      - deploy:
           requires:
             - preparation
             - test
-      - deploy:
-          requires:
-            - hold
