@@ -58,8 +58,11 @@ All the backend/API dependencies sorted by priority:
 - JSON Web Token (JWT) — Compact URL-safe means of representing claims
   - `jsonwebtoken` — JWT implementationm, symmetric and asymmetric
 - HTTPie — Command-line HTTP client that will make you smile
-- Mailgun — Transactional email API service for developers
-  - Nodemailer — Module for Node.js to send emails
+- Nodemailer — Module for Node.js to send emails
+  - Mailgun — Transactional email API service for developers
+  - (Alternative) Other mail services:
+    - Amazon SES
+    - Postmark
 - ESLint — Pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript
   - Prettier — Opinionated code formatter and extension for code editor
   - Standard — JavaScript style guide, linter, and formatter
@@ -101,7 +104,9 @@ Alternative future dependencies:
 Never be dependencies:
 
 - Other non-JavaScript family languages
+  - Avoid Python, Ruby, Golang, and others. Template is scope limited to raw JavaScript or TypeScript-related. For that other matters it's better to create different repositories.
 - Other non-Express frameworks
+  - Avoid Hapi and non-familiar ones, or too raw (such as only `http` package).
 
 For dependencies in the Web part, [see `template-web`](https://github.com/azobu-projects/template-web).
 
