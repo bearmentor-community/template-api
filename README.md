@@ -34,79 +34,87 @@ You should clone all of the required repositories:
 
 All the backend/API dependencies sorted by priority:
 
-- Git — Distributed version control system
-  - GitHub — Provides hosting for software development and version control using Git
-- JavaScript — The primary programming language
-  - Node.js — JavaScript runtime environment and package manager
-  - npm, Yarn — JavaScript runtime environment and package manager
-- REST API — REpresentational State Transfer, architectural style for distributed hypermedia systems
-- Nodemon — Tool to automatically restart Node application when file changes
-- PM2 — Process manager for Node.js
-  - [PM2.IO](https://pm2.io) — (PM2+ Monit) Monitor PM2 instances
-- Express — Minimal and flexible Node.js web application framework
-- MongoDB — Cross-platform document-oriented database program
-  - Mongoose — Schema-based Object-Data Modeling (ODM) for MongoDB
-- PostgreSQL — Relational database management system with SQL
-  - Sequelize — Promise-based Node.js Object-Relational Mapper (ORM) for SQL-related databases
-- `dotenv-flow` — Loader for multiple environment variable files
-- `morgan` — HTTP request logger middleware for Node.js
-- `multer` — Express middleware for handling `multipart/form-data`
-- `cors` — Express middleware that to enable CORS with various options
-- `bcrypt` — Library to hash passwords
-- `crypto` — JavaScript library of crypto standards
-- Helmet — Secure Express app by setting various HTTP headers
-- JSON Web Token (JWT) — Compact URL-safe means of representing claims
-  - `jsonwebtoken` — JWT implementationm, symmetric and asymmetric
-- HTTPie — Command-line HTTP client that will make you smile
-- Nodemailer — Module for Node.js to send emails
-  - Mailgun — Transactional email API service for developers
-  - (Alternative) Other mail services:
-    - Amazon SES
-    - Postmark
-- ESLint — Pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript
-  - Prettier — Opinionated code formatter and extension for code editor
-  - Standard — JavaScript style guide, linter, and formatter
-- Google Cloud Platform (GCP) — Suite of cloud computing services that runs on the same infrastructure that Google uses internally
-  - Google Compute Engine (GCE) — Configurable virtual machines running in Google's data centers
-  - Google Cloud Storage — RESTful online file storage web service for storing and accessing data
-- Alternative of GCP:
-  - Heroku — Cloud platform as a service supporting several programming languages
-- Nginx — High-performance HTTP web server, load balancer, and reverse proxy
-- Let's Encrypt — Free SSL/TLS Certificates to enable HTTPS
-  - Certbot — Automatically enable HTTPS on your website by deploying Let's Encrypt certificates
-- Circle CI — Intelligent and user-friendly Continuous Integration and Deployment (CI/CD)
-- Cloudflare — Enterprise-grade authoritative DNS service
-- Uniregistry — Retail domain name registrar
+- **Git** — Distributed version control system
+  - **GitHub** — Provides hosting for software development and version control using Git
+- **JavaScript** — The primary programming language
+  - **Node.js** — JavaScript runtime environment and package manager
+  - **npm, Yarn** — JavaScript runtime environment and package manager
+- **REST API** — REpresentational State Transfer, architectural style for distributed hypermedia systems
+- **Nodemon** — Tool to automatically restart Node application when file changes
+- **PM2** — Process manager for Node.js
+  - [**PM2.IO**](https://pm2.io) — PM2+ Monit to monitor PM2 instances (formerly named Keymetrics)
+- **Express** — Minimal and flexible Node.js web application framework
+- **MongoDB** — Cross-platform document-oriented database program
+  - **Mongoose** — Schema-based Object-Data Modeling (ODM) for MongoDB
+- **PostgreSQL** — Relational database management system with SQL
+  - **Sequelize** — Promise-based Node.js Object-Relational Mapper (ORM) for SQL-related databases
+  - (Alternative) Other ORM-related:
+    - **TypeORM**
+- **`dotenv-flow`** — Loader for multiple environment variable files
+- **`morgan`** — HTTP request logger middleware for Node.js
+- **`multer`** — Express middleware for handling `multipart/form-data`
+- **`cors`** — Express middleware that to enable CORS with various options
+- **`bcrypt`** — Library to hash passwords
+- **`crypto`** — JavaScript library of crypto standards
+- **Express Helmet** — Secure Express app by setting various HTTP headers
+- **JSON Web Token (JWT)** — Compact URL-safe means of representing claims
+  - **`jsonwebtoken`** — JWT implementationm, symmetric and asymmetric
+- **HTTPie** — Command-line HTTP client that will make you smile
+- **Nodemailer** — Module for Node.js to send emails
+  - **Mailgun** — Transactional email API service for developers
+- **Sentry** — Application monitoring and error tracking software
+- **LogRocket** — Logging and Session Replay for JavaScript Apps
+- **ESLint** — Pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript
+  - **Prettier** — Opinionated code formatter and extension for code editor
+  - **Standard** — JavaScript style guide, linter, and formatter
+- **Google Cloud Platform (GCP)** — Suite of cloud computing services that runs on the same infrastructure that Google uses internally
+  - **Google Compute Engine (GCE)** — Configurable virtual machines running in Google's data centers
+  - **Google Cloud Storage** — RESTful online file storage web service for storing and accessing data
+- **Nginx** — High-performance HTTP web server, load balancer, and reverse proxy
+- **Let's Encrypt** — Free SSL/TLS Certificates to enable HTTPS
+  - **Certbot** — Automatically enable HTTPS on your website by deploying Let's Encrypt certificates
+- **Circle CI** — Intelligent and user-friendly Continuous Integration and Deployment (CI/CD)
+- **Cloudflare** — Enterprise-grade authoritative DNS service
+- **Uniregistry** — Retail domain name registrar
 
 Alternative future dependencies:
 
-- Postman - The collaboration platform for API development
+- **Postman** - The collaboration platform for API development
   - `newman` - CLI companion for Postman
 - Alternative of REST API:
-  - GraphQL API — Data query and manipulation language for APIs
-    - Apollo — Data graph platform to unify APIs, microservices, and databases with GraphQL
+  - **GraphQL API** — Data query and manipulation language for APIs
+    - **Apollo** — Data graph platform to unify APIs, microservices, and databases with GraphQL
 - `slug` — Encode string into URL-friendly format
-- Jest — Delightful JavaScript testing framework
-- Sinon — Standalone test spies, stubs and mocks for JavaScript
-- TypeScript — Typed JavaScript at application-scale JavaScript
-- Passport — Simple, unobtrusive authentication for Node.js.
-- OAuth — Open standard for access delegation
+- Alternative of GCP:
+  - **Amazon Web Services** — Reliable, scalable, and inexpensive cloud computing services by Amazon
+  - **Heroku** — Cloud platform as a service supporting several programming languages
+- Alternative of mail services:
+  - **Amazon SES** — Cost-effective, flexible, and scalable email service by Amazon
+  - **Postmark** — Transactional email service with exceptional delivery
+- **Jest** — Delightful JavaScript testing framework
+- **Sinon** — Standalone test spies, stubs and mocks for JavaScript
+- **TypeScript** — Typed JavaScript at application-scale JavaScript
+- **Passport** — Simple, unobtrusive authentication for Node.js.
+- **OAuth** — Open standard for access delegation
   - GitHub OAuth
   - Google OAuth
-- Redis — In-memory data structure store used as a database, cache and message broker
+- **Redis** — In-memory data structure store used as a database, cache and message broker
 - Alternative of Circle CI:
-  - GitHub Actions — Automate, customize, and execute workflows right in GitHub
-  - Travis CI — Hosted CI service used to build and test software projects
-  - Jenkins — Automation server to support building, deploying and automating any project
-- Docker — Virtualization to deliver software in packages called containers
-  - Docker Compose — Provides a way to document and configure all of the app service dependencies
+  - **GitHub Actions** — Automate, customize, and execute workflows right in GitHub
+  - **Travis CI** — Hosted CI service used to build and test software projects
+  - **Jenkins** — Automation server to support building, deploying and automating any project
+- **New Relic** — Single source of truth for infrastructure monitoring, APM agents, browser monitoring, and logging
+- **Docker** — Virtualization to deliver software in packages called containers
+  - **Docker Compose** — Provides a way to document and configure all of the app service dependencies
 
 Never be dependencies:
 
-- Other non-JavaScript family languages
+- **Other non-JavaScript family languages**
   - Avoid Python, Ruby, Golang, and others. Template is scope limited to raw JavaScript or TypeScript-related. For that other matters it's better to create different repositories.
-- Other non-Express frameworks
+- **Other non-Express frameworks**
   - Avoid Hapi and non-familiar ones, or too raw (such as only `http` package).
+- **Database as a Service (DBaaS) or unnecessary 3rd party services**
+  - Avoid mLab, MongoDB Atlas, Heroku Postgres as they have limitations on free tier
 
 For dependencies in the Web part, [see `template-web`](https://github.com/azobu-projects/template-web).
 
