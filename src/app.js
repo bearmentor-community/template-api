@@ -1,5 +1,6 @@
 require('dotenv-flow').config()
 const express = require('express')
+const helmet = require('helmet')
 const path = require('path')
 const cookieParser = require('cookie-parser')
 const logger = require('morgan')
@@ -14,6 +15,7 @@ const searchRouter = require('./routes/search')
 
 const app = express()
 
+app.use(helmet())
 app.use(cors())
 app.use(logger('dev'))
 app.use(express.json())

@@ -1,14 +1,17 @@
 const mongoose = require('../../config/mongoose')
-const AutoIncrement = require('mongoose-sequence')(mongoose)
+const autoIncrement = require('mongoose-sequence')(mongoose)
+const uniqueValidator = require('mongoose-unique-validator')
 
 const ItemSchema = mongoose.Schema(
   {
     title: {
       type: String,
-      required: [true, 'Title is required']
+      required: [true, 'Title is required'],
+      unique: true
     },
     slug: {
-      type: String
+      type: String,
+      unique: true
     },
     html: {
       type: String
@@ -23,7 +26,8 @@ const ItemSchema = mongoose.Schema(
   }
 )
 
-ItemSchema.plugin(AutoIncrement, {
+ItemSchema.plugin(uniqueValidator)
+ItemSchema.plugin(autoIncrement, {
   id: 'items_counter',
   inc_field: 'id'
 })

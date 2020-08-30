@@ -1,5 +1,5 @@
 const mongoose = require('../../config/mongoose')
-const AutoIncrement = require('mongoose-sequence')(mongoose)
+const autoIncrement = require('mongoose-sequence')(mongoose)
 
 const ImageSchema = mongoose.Schema(
   {
@@ -19,7 +19,7 @@ const ImageSchema = mongoose.Schema(
   }
 )
 
-ImageSchema.plugin(AutoIncrement, {
+ImageSchema.plugin(autoIncrement, {
   id: 'images_counter',
   inc_field: 'id'
 })
