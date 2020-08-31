@@ -2,7 +2,6 @@ const Item = require('../../items/model')
 
 module.exports = async (req, res) => {
   // Search item for title by keyword
-  console.log(req.query)
   const items = await Item.find({
     $or: [
       {
@@ -13,8 +12,6 @@ module.exports = async (req, res) => {
       }
     ]
   })
-
-  console.log(items)
 
   res.send({
     message: 'Search items success',
