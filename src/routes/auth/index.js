@@ -4,13 +4,13 @@ const router = express.Router()
 const auth = require('./middlewares')
 
 router.get('/profile', auth.isAuthenticated, auth.getAuthenticatedUser)
-router.post('/register', auth.isRegistered, auth.register)
+router.post('/register', auth.isUserRegistered, auth.registerNewUser)
 router.post(
   '/login',
-  auth.isRegistered,
+  auth.isUserRegistered,
   auth.isPasswordCorrect,
-  auth.authenticate
+  auth.authenticateUser
 )
-router.post('/logout', auth.isAuthenticated, auth.deauthenticate)
+router.post('/logout', auth.isAuthenticated, auth.deauthenticateUser)
 
 module.exports = router

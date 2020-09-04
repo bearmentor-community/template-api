@@ -5,16 +5,15 @@ module.exports = async (req, res) => {
     const result = await User.remove()
 
     res.status(200).send({
-      message: 'Delete all users',
+      message: 'Deleted all users',
       data: {
         deletedCount: result.deletedCount
       }
     })
   } catch (error) {
     console.error('Error when deleting all users')
-
     res.status(500).send({
-      message: 'Failed to delete all users'
+      message: 'Delete all users failed'
     })
   }
 }

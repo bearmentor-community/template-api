@@ -2,10 +2,14 @@ const Item = require('../model')
 const seedItemsData = require('../seed.json')
 
 module.exports = async (req, res) => {
-  const foundItem = await Item.find()
+  const foundItems = await Item.find()
 
-  // Don't continue if the items already exists
-  if (foundItem.length > 0) {
+  if (!req.isApiKeyCorrect) {
+    res.status(400).send({
+      message: 'API key is not found'
+    })
+  } else if (foundItems.length > 0) {
+    // Don't continue if the items already exists
     res.status(400).send({
       message: 'Seed initial items failed because already exists'
     })

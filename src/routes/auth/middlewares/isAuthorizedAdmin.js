@@ -10,7 +10,7 @@ const isAuthorizedAdmin = async (req, res, next) => {
     next()
   } else {
     res.status(403).send({
-      message: 'The user is unauthorized to do that',
+      message: 'User is unauthorized to do that',
       error: 'User is not an admin'
     })
   }

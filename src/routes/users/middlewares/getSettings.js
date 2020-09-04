@@ -8,7 +8,7 @@ module.exports = async (req, res) => {
     const user = await User.findOne({ id: id }, '-password -hash -salt')
 
     res.status(200).send({
-      message: 'Got user account information',
+      message: 'Get user account settings',
       data: {
         user: user
       }

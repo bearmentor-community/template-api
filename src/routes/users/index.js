@@ -5,16 +5,10 @@ const auth = require('../auth/middlewares')
 const users = require('./middlewares')
 const { upload } = require('../../utils/multer')
 
-router.post('/seed', users.seed)
+router.post('/seed', auth.isApiKeyCorrect, users.seed)
+router.get('/count', users.count)
 router.get('/', users.getAll)
 router.get('/:username', users.isUsernameExist, users.getByUsername)
-router.delete('/:id', auth.isAuthenticated, users.deleteByUsername)
-router.delete(
-  '/',
-  auth.isAuthenticated,
-  auth.isAuthorizedAdmin,
-  users.deleteAll
-)
 router.get(
   '/:id/settings',
   auth.isAuthenticated,
@@ -28,5 +22,7 @@ router.put(
   upload.single('avatar'),
   users.updateSettings
 )
+router.delete('/', auth.isApiKeyCorrect, users.deleteAll)
+router.delete('/:id', auth.isAuthenticated, users.deleteByUsername)
 
 module.exports = router

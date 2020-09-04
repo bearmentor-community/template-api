@@ -1,11 +1,12 @@
 module.exports = {
-  register: require('./register'),
-  authenticate: require('./authenticate'),
-  deauthenticate: require('./deauthenticate'),
+  authenticateUser: require('./authenticateUser'),
+  deauthenticateUser: require('./deauthenticateUser'),
   getAuthenticatedUser: require('./getAuthenticatedUser'),
-  isRegistered: require('./isRegistered'),
-  isPasswordCorrect: require('./isPasswordCorrect'),
+  isApiKeyCorrect: require('./isApiKeyCorrect'),
   isAuthenticated: require('./isAuthenticated'),
   isAuthorized: require('./isAuthorized'),
-  isAuthorizedAdmin: require('./isAuthorizedAdmin')
+  isAuthorizedAdmin: require('./isAuthorizedAdmin'),
+  isPasswordCorrect: require('./isPasswordCorrect'),
+  isUserRegistered: require('./isUserRegistered'),
+  registerNewUser: require('./registerNewUser')
 }

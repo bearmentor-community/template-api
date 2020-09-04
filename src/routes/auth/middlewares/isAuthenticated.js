@@ -16,7 +16,7 @@ module.exports = async (req, res, next) => {
         next()
       } else {
         res.status(401).send({
-          message: 'The user is unable to authenticate',
+          message: 'User is unable to authenticate',
           error: 'Token is invalid to be verified'
         })
       }
@@ -25,7 +25,7 @@ module.exports = async (req, res, next) => {
     console.error('Error when getting the token from Authorization header.')
 
     res.status(400).send({
-      message: 'The user is unable to authenticate',
+      message: 'User is unable to authenticate',
       error: 'Token is not provided in the Authorization header'
     })
   }
