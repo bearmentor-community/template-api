@@ -23,9 +23,7 @@ module.exports = async (req, res) => {
           await collection.deleteMany()
         }
 
-        // Remove all files inside uploads folder
-        // except .gitkeep
-        // console.log(path.join(__dirname, '../../../../public/uploads'))
+        // Remove all files inside uploads folder except .gitkeep
         try {
           const uploadsDir = path.join(__dirname, '../../../../public/uploads')
 

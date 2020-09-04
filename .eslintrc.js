@@ -1,12 +1,12 @@
 module.exports = {
-  plugins: ['jest'],
+  plugins: ['jest', 'security'],
   env: {
     node: true,
     es2020: true,
     commonjs: true,
     'jest/globals': true
   },
-  extends: ['standard', 'prettier'],
+  extends: ['standard', 'prettier', 'plugin:security/recommended'],
   parserOptions: {
     ecmaVersion: 11
   },

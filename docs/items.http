@@ -5,5 +5,11 @@ X-API-Key: api_key_example
 ### Get all items
 GET http://localhost:3000/items
 
+### Get item by slug
+GET http://localhost:3000/items/iron-man-suit
+
+### Get item by slug when failed
+GET http://localhost:3000/items/iron-man-armor
+
 ### Remove all items
 DELETE http://localhost:3000/items
