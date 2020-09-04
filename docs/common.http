@@ -1,0 +1,6 @@
+### Get welcome message
+GET http://localhost:3000
+
+### Reset everything
+DELETE http://localhost:3000?resetEverything=true
+X-API-Key: api_key_example

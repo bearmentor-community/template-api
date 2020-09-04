@@ -1,12 +1,16 @@
-### Seed users
-POST http://localhost:3000/users/seed
-
-### Remove all users
-DELETE http://localhost:3000/users
-Authorization: Bearer {token}
-
 ### Get all users
 GET http://localhost:3000/users
 
+### Seed users
+POST http://localhost:3000/users/seed
+X-API-Key: api_key_example
+
+### Get count of all users
+GET http://localhost:3000/users/count
+
 ### Get one user by username
 GET http://localhost:3000/users/ironman
+
+### Delete all users
+DELETE http://localhost:3000/users
+X-API-Key: api_key_example
