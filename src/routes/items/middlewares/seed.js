@@ -6,7 +6,7 @@ module.exports = async (req, res) => {
 
   if (!req.isApiKeyCorrect) {
     res.status(400).send({
-      message: 'API key is not found'
+      message: 'Seed initial items failed because API key is not found'
     })
   } else if (foundItems.length > 0) {
     // Don't continue if the items already exists

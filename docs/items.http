@@ -1,5 +1,6 @@
 ### Seed items
 POST http://localhost:3000/items/seed
+X-API-Key: api_key_example
 
 ### Get all items
 GET http://localhost:3000/items

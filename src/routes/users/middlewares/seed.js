@@ -9,7 +9,7 @@ module.exports = async (req, res) => {
 
   if (!req.isApiKeyCorrect) {
     res.status(400).send({
-      message: 'API key is not found'
+      message: 'Seed initial users failed because API key is not found'
     })
   } else if (foundUsers.length > 0) {
     res.status(500).send({

@@ -1,7 +1,7 @@
 const jsonwebtoken = require('../../../utils/jsonwebtoken')
 
 module.exports = async (req, res) => {
-  if (!res.isPasswordCorrect) {
+  if (!req.isPasswordCorrect) {
     res.status(401).send({
       message: 'User authentication failed because password is incorrect',
       data: {

@@ -1,9 +1,10 @@
 const express = require('express')
 const router = express.Router()
 
-const items = require('./middlewares')
+const auth = require('../auth/middlewares')
+const items = require('../items/middlewares')
 
-router.post('/seed', items.seed)
+router.post('/seed', auth.isApiKeyCorrect, items.seed)
 router.get('/', items.getAll)
 router.get('/:slug', items.getBySlug)
 router.delete('/', items.removeAll)

@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 
 const auth = require('../auth/middlewares')
-const users = require('./middlewares')
+const users = require('../users/middlewares')
 const { upload } = require('../../utils/multer')
 
 router.post('/seed', auth.isApiKeyCorrect, users.seed)
