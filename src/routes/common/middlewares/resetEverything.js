@@ -9,7 +9,11 @@ module.exports = async (req, res) => {
 
     if (!isResetTrue) {
       res.status(500).send({
-        message: 'Reset everything is failed'
+        message: 'Reset everything is failed because query is wrong'
+      })
+    } else if (!req.isApiKeyCorrect) {
+      res.status(500).send({
+        message: 'Reset everything is failed because API key is incorrect'
       })
     } else {
       try {
