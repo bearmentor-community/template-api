@@ -9,7 +9,7 @@ module.exports = async (plainPassword) => {
   const hash = await bcrypt.hash(plainPassword, salt)
 
   // Return both salt & hash as an object
-  // Will be used in the register middleware
+  // Will be used in the registerNewUser middleware
   // Both salt and hash will be stored in the database
   // But we will NOT store the plainPassword in the database
   return {

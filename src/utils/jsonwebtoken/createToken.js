@@ -6,13 +6,12 @@ module.exports = async (user) => {
   if (!JWT_SECRET) {
     console.error('JWT_SECRET is undefined')
   } else {
-    // Create the payload without having the salt and password
+    // Create the payload without having the sensitive information
     const payload = {
       _id: user._id,
       id: user.id,
       username: user.username,
-      name: user.name,
-      email: user.email
+      name: user.name
     }
 
     // Create the token and sign with secret
