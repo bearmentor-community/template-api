@@ -1,6 +1,6 @@
 # ⭕ Template API
 
-> Template API is a quick starter kit project to build a complete API using Node.js and Express.
+> [Template API](https://api.template.azobu.com) is a quick starter kit project to build a complete API using Node.js and Express.
 
 [![Website](https://img.shields.io/website-up-down-green-red/https/api.template.azobu.com.svg)](https://api.template.azobu.com)
 [![CircleCI Status](https://circleci.com/gh/azobu-projects/template-api.svg?style=svg)](https://circleci.com/gh/azobu-projects/template-api)
@@ -10,13 +10,12 @@ The complete list of all features are located at [`azobu-projects/template`](htt
 
 ## Table of Contents
 
-- Introduction
 - [Repositories](#repositories)
 - [Tech Stack](#tech-stack)
 - [Application Structure](#application-structure)
 - [Getting Started](#getting-started)
   - [Installation](#installation)
-  - [Setup Environment Variables](#setup-environment-variables)
+  - [Setup Environment](#setup-environment)
   - [Run](#run)
   - [Lint](#lint)
   - [Test](#test)
@@ -31,6 +30,8 @@ You should clone all of the required repositories:
 - [`template-api`](https://github.com/azobu-projects/template-api)
 
 ## Tech Stack
+
+### Primary
 
 All the backend/API dependencies sorted by priority:
 
@@ -77,15 +78,17 @@ All the backend/API dependencies sorted by priority:
 - **Cloudflare** — Enterprise-grade authoritative DNS service
 - **Uniregistry** — Retail domain name registrar
 
-Alternative future dependencies:
+### Alternative
+
+Alternative or future dependencies:
 
 - **Postman** - The collaboration platform for API development
   - `newman` - CLI companion for Postman
-- Alternative of REST API:
+- Alternative of **REST API**:
   - **GraphQL API** — Data query and manipulation language for APIs
     - **Apollo** — Data graph platform to unify APIs, microservices, and databases with GraphQL
 - `slug` — Encode string into URL-friendly format
-- Alternative of GCP:
+- Alternative of **Google Cloud Platform**:
   - **Amazon Web Services** — Reliable, scalable, and inexpensive cloud computing services by Amazon
   - **Heroku** — Cloud platform as a service supporting several programming languages
 - Alternative of mail services:
@@ -107,16 +110,22 @@ Alternative future dependencies:
 - **Docker** — Virtualization to deliver software in packages called containers
   - **Docker Compose** — Provides a way to document and configure all of the app service dependencies
 
+### Avoided
+
 Never be dependencies:
 
 - **Other non-JavaScript family languages**
-  - Avoid Python, Ruby, Golang, and others. Template is scope limited to raw JavaScript or TypeScript-related. For that other matters it's better to create different repositories.
+  - Avoid PHP, Python, Ruby, Golang, and others. Template API is scope limited to JavaScript or TypeScript ecosystem. For that other matters it's better to create different repositories.
 - **Other non-Express frameworks**
   - Avoid Hapi and non-familiar ones, or too raw (such as only `http` package).
 - **Database as a Service (DBaaS) or unnecessary 3rd party services**
   - Avoid mLab, MongoDB Atlas, Heroku Postgres as they have limitations on free tier
 
-For dependencies in the Web part, [see `template-web`](https://github.com/azobu-projects/template-web).
+### Known Limitations
+
+- The JWT is still just an `accessToken`, there's no `refreshToken` yet.
+- Uploaded files are stored into disk or file system to make it simple for now.
+- No API versioning yet.
 
 ## Application Structure
 
@@ -161,7 +170,16 @@ Install dependencies using `yarn`:
 yarn
 ```
 
-### Setup Environment Variables
+### Setup Environment
+
+You can setup the environment variables separately between global, development, and production.
+
+For global config, edit `.env.local` file:
+
+```sh
+SERVER_USER=username
+SERVER_HOST=10.20.30.40
+```
 
 For development, edit `.env.development.local` file:
 
