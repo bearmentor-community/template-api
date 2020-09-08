@@ -10,18 +10,22 @@ The complete list of all features are located at [`azobu-projects/template`](htt
 
 ## Table of Contents
 
-- [Repositories](#repositories)
-- [Tech Stack](#tech-stack)
-- [Application Structure](#application-structure)
-- [Getting Started](#getting-started)
+- [📦 Repositories](#-repositories)
+- [🧱 Tech Stack](#-tech-stack)
+- [🏛️ Application Structure](#-application-structure)
+- [🏁 Getting Started](#-getting-started)
   - [Installation](#installation)
   - [Setup Environment](#setup-environment)
   - [Run](#run)
   - [Lint](#lint)
   - [Test](#test)
   - [Deployment](#deployment)
+- [👤 Authors](#-authors)
+- [🤝 Contribution](#-contribution)
+- [🎁 Support](#-support)
+- [📝 License](#license)
 
-## Repositories
+## 📦 Repositories
 
 You should clone all of the required repositories:
 
@@ -29,7 +33,7 @@ You should clone all of the required repositories:
 - [`template-web`](https://github.com/azobu-projects/template-web): Frontend application
 - [`template-api`](https://github.com/azobu-projects/template-api): Backend application
 
-## Tech Stack
+## 🧱 Tech Stack
 
 ### Primary
 
@@ -128,7 +132,7 @@ Never be dependencies:
 - Uploaded files are stored into disk or file system to make it simple for now.
 - No API versioning yet.
 
-## Application Structure
+## 🏛️ Application Structure
 
 ```sh
 template-api
@@ -162,7 +166,7 @@ template-api
 
 There are various dotfiles related to environment variables, Prettier, ESLint, Git ignore, Circle CI, Heroku, nvm, and Travis CI.
 
-## Getting Started
+## 🏁 Getting Started
 
 ### Installation
 
@@ -171,6 +175,10 @@ Install dependencies using `yarn`:
 ```sh
 yarn
 ```
+
+This will automatically run `postinstall.sh` script which creates `.env.*.local` files which also can be run with `yarn postinstall`.
+
+You should also install and run `template-web` before continuing if you want to make sure the API is properly connected.
 
 ### Setup Environment
 
@@ -218,6 +226,44 @@ yarn dev
 
 Access the API on <http://localhost:3000>.
 
+### Run with PM2
+
+```sh
+yarn pm2:dev
+# or
+yarn pm2:prod
+```
+
+List process:
+
+```sh
+yarn pm2:list
+```
+
+Display logs:
+
+```sh
+yarn pm2:logs
+```
+
+Flush logs:
+
+```sh
+yarn pm2:flush
+```
+
+Stop all process:
+
+```sh
+yarn pm2:stop
+```
+
+Delete all process:
+
+```sh
+yarn pm2:delete
+```
+
 ### Lint
 
 ```sh
@@ -234,6 +280,18 @@ yarn lint --fix
 
 ```sh
 yarn test
+```
+
+Watch for changes:
+
+```sh
+yarn test:watch
+```
+
+Generate coverage:
+
+```sh
+yarn test:coverage
 ```
 
 ### Deployment
@@ -258,11 +316,19 @@ yarn test
   - `yarn pm2:deploy`
     - Should pull latest changes and `startOrRestart` Node.js server.
 
-## Authors
+## 👤 Authors
 
 - [M Haidar Hanif](https://mhaidarhanif.com) ([@mhaidarh](https://github.com/mhaidarh))
 - [Azobu Team](https://azobu.com) ([@azobu](https://github.com/azobu))
 
-## License
+## 🤝 Contribution
+
+Contributions, issues, and feature requests are welcome!
+
+## 🎁 Support
+
+Give a ⭐️ if this project helped or inspired you!
+
+## 📝 License
 
 See [LICENSE](./LICENSE)

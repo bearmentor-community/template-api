@@ -21,9 +21,6 @@ module.exports = {
       env_development: {
         NODE_ENV: 'development'
       },
-      env_staging: {
-        NODE_ENV: 'staging'
-      },
       env_production: {
         NODE_ENV: 'production'
       }
@@ -44,8 +41,7 @@ module.exports = {
       ssh_options: 'StrictHostKeyChecking=no',
       'pre-deploy-local': 'echo "Ready to deploy staging app"',
       'post-deploy':
-        'yarn && pm2 startOrRestart ecosystem.config.js --env staging',
-      env: { NODE_ENV: 'staging' }
+        'yarn && pm2 startOrRestart ecosystem.config.js --env staging'
     },
     production: {
       user: process.env.SERVER_USER,
@@ -56,8 +52,7 @@ module.exports = {
       ssh_options: 'StrictHostKeyChecking=no',
       'pre-deploy-local': '"Ready to deploy production app"',
       'post-deploy':
-        'yarn && pm2 startOrRestart ecosystem.config.js --env production',
-      env: { NODE_ENV: 'production' }
+        'yarn && pm2 startOrRestart ecosystem.config.js --env production'
     }
   }
 }

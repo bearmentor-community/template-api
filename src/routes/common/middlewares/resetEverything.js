@@ -27,11 +27,17 @@ module.exports = async (req, res) => {
         try {
           const uploadsDir = path.join(__dirname, '../../../../public/uploads')
 
+          // Only read uploads folder
+          // eslint-disable-next-line security/detect-non-literal-fs-filename
           fs.readdir(uploadsDir, (error, files) => {
             if (error) console.error(error)
+
             files.forEach((file) => {
               const fileDir = path.join(uploadsDir, file)
+
               if (file !== '.gitkeep') {
+                // Only delete uploads folder
+                // eslint-disable-next-line security/detect-non-literal-fs-filename
                 fs.unlinkSync(fileDir)
               }
             })

@@ -5,8 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "pm2:dev": "pm2 startOrGracefulReload ecosystem.config.js --env development",
-    "pm2:staging": "pm2 startOrGracefulReload ecosystem.config.js --env staging",
-    "pm2:production": "pm2 startOrGracefulReload ecosystem.config.js --env production",
+    "pm2:prod": "pm2 startOrGracefulReload ecosystem.config.js --env production",
     "pm2:list": "pm2 list",
     "pm2:logs": "pm2 logs template-api",
     "pm2:flush": "pm2 flush template-api",
@@ -16,8 +15,9 @@
     "pm2:deploy": "pm2 deploy ecosystem.config.js production",
     "dev": "nodemon src/index.js",
     "debug": "DEBUG=express:* node src/index.js",
-    "test": "jest --no-cache --detectOpenHandles --runInBand --forceExit",
+    "test": "jest --ci --no-cache --detectOpenHandles --runInBand --forceExit",
     "test:watch": "jest --watch",
+    "test:coverage": "jest --ci --coverage --reporters=default",
     "lint": "eslint . --ext .js",
     "postinstall": "./postinstall.sh"
   },
