@@ -15,22 +15,22 @@ The complete list of all features are located at [`azobu-projects/template`](htt
 
 ## Table of Contents
 
-- [📦 Repositories](#-repositories)
-- [🧱 Tech Stack](#-tech-stack)
-- [🏛️ Application Structure](#-application-structure)
-- [🏁 Getting Started](#-getting-started)
+- [📦 Repositories](#-repositories-)
+- [🧱 Tech Stack](#-tech-stack-)
+- [🏛️ Application Structure](#-application-structure-)
+- [🏁 Getting Started](#-getting-started-)
   - [Installation](#installation)
   - [Setup Environment](#setup-environment)
   - [Run](#run)
   - [Lint](#lint)
   - [Test](#test)
   - [Deployment](#deployment)
-- [👤 Authors](#-authors)
-- [🤝 Contribution](#-contribution)
-- [🎁 Support](#-support)
-- [📝 License](#license)
+- [👤 Authors](#-authors-)
+- [🤝 Contribution](#-contribution-)
+- [🎁 Support](#-support-)
+- [📝 License](#license-)
 
-## 📦 Repositories
+## 📦 Repositories [🔝](#-template)
 
 You should clone all of the required repositories:
 
@@ -38,7 +38,7 @@ You should clone all of the required repositories:
 - [`template-web`](https://github.com/azobu-projects/template-web): Frontend application
 - [`template-api`](https://github.com/azobu-projects/template-api): Backend application
 
-## 🧱 Tech Stack
+## 🧱 Tech Stack [🔝](#-template)
 
 ### Primary
 
@@ -137,7 +137,7 @@ Never be dependencies:
 - Uploaded files are stored into disk or file system to make it simple for now.
 - No API versioning yet.
 
-## 🏛️ Application Structure
+## 🏛️ Application Structure [🔝](#-template)
 
 ```sh
 template-api
@@ -171,7 +171,7 @@ template-api
 
 There are various dotfiles related to environment variables, Prettier, ESLint, Git ignore, Circle CI, Heroku, nvm, and Travis CI.
 
-## 🏁 Getting Started
+## 🏁 Getting Started [🔝](#-template)
 
 ### Installation
 
@@ -321,19 +321,19 @@ yarn test:coverage
   - `yarn pm2:deploy`
     - Should pull latest changes and `startOrRestart` Node.js server.
 
-## 👤 Authors
+## 👤 Authors [🔝](#-template)
 
 - [M Haidar Hanif](https://mhaidarhanif.com) ([@mhaidarh](https://github.com/mhaidarh))
 - [Azobu Team](https://azobu.com) ([@azobu](https://github.com/azobu))
 
-## 🤝 Contribution
+## 🤝 Contribution [🔝](#-template)
 
 Contributions, issues, and feature requests are welcome!
 
-## 🎁 Support
+## 🎁 Support [🔝](#-template)
 
 Give a ⭐️ if this project helped or inspired you!
 
-## 📝 License
+## 📝 License [🔝](#-template)
 
 See [LICENSE](./LICENSE)
