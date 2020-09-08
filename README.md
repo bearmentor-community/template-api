@@ -6,6 +6,11 @@
 [![CircleCI Status](https://circleci.com/gh/azobu-projects/template-api.svg?style=svg)](https://circleci.com/gh/azobu-projects/template-api)
 ![License](https://img.shields.io/github/license/azobu-projects/template-api)
 
+| Template API                                                                                                                            |
+| --------------------------------------------------------------------------------------------------------------------------------------- |
+| [![API](https://raw.githubusercontent.com/azobu-projects/template/master/screenshots/template-api.jpg)](https://api.template.azobu.com) |
+| [api.template.azobu.com](https://api.template.azobu.com)                                                                                |
+
 The complete list of all features are located at [`azobu-projects/template`](https://github.com/azobu-projects/template) or live on [template.azobu.com](https://template.azobu.com/about).
 
 ## Table of Contents
