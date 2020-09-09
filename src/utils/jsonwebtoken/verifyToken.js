@@ -4,7 +4,7 @@ module.exports = async (token) => {
   const JWT_SECRET = process.env.EXPRESS_APP_JWT_SECRET
 
   if (!JWT_SECRET) {
-    console.error('JWT_SECRET is undefined')
+    console.error('JWT_SECRET is undefined on verifyToken')
   } else {
     try {
       // Verify token with the same configured secret

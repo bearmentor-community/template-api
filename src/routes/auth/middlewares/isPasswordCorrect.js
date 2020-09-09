@@ -1,7 +1,7 @@
 const bcrypt = require('../../../utils/bcrypt')
 
 const isPasswordCorrect = async (req, res, next) => {
-  if (!req.isUserRegistered) {
+  if (!req.isUserEmailRegistered) {
     res.status(401).send({
       message: 'User is not registered yet with that email',
       email: req.body.email

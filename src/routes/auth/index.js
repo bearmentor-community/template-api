@@ -4,10 +4,15 @@ const router = express.Router()
 const auth = require('./middlewares')
 
 router.get('/profile', auth.isAuthenticated, auth.getAuthenticatedUser)
-router.post('/register', auth.isUserRegistered, auth.registerNewUser)
+router.post(
+  '/register',
+  auth.isUserEmailRegistered,
+  auth.isUserUsernameRegistered,
+  auth.registerNewUser
+)
 router.post(
   '/login',
-  auth.isUserRegistered,
+  auth.isUserEmailRegistered,
   auth.isPasswordCorrect,
   auth.authenticateUser
 )

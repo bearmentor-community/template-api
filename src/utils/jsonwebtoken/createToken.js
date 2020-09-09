@@ -4,7 +4,7 @@ module.exports = async (user) => {
   const JWT_SECRET = process.env.EXPRESS_APP_JWT_SECRET
 
   if (!JWT_SECRET) {
-    console.error('JWT_SECRET is undefined')
+    console.error('JWT_SECRET is undefined on createToken')
   } else {
     // Create the payload without having the sensitive information
     const payload = {

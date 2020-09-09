@@ -4,11 +4,18 @@ const bcrypt = require('../../../utils/bcrypt')
 const reservedUsernames = require('../../users/data/reservedUsernames.json')
 
 module.exports = async (req, res) => {
-  if (req.isUserRegistered) {
+  if (req.isUserEmailRegistered) {
     res.status(409).send({
       message: 'User is already registered with that email',
       data: {
         email: req.body.email
+      }
+    })
+  } else if (req.isUserUsernameRegistered) {
+    res.status(409).send({
+      message: 'User is already registered with that username',
+      data: {
+        username: req.body.username
       }
     })
   } else {

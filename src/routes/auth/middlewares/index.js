@@ -7,6 +7,7 @@ module.exports = {
   isAuthorized: require('./isAuthorized'),
   isAuthorizedAdmin: require('./isAuthorizedAdmin'),
   isPasswordCorrect: require('./isPasswordCorrect'),
-  isUserRegistered: require('./isUserRegistered'),
+  isUserEmailRegistered: require('./isUserEmailRegistered'),
+  isUserUsernameRegistered: require('./isUserUsernameRegistered'),
   registerNewUser: require('./registerNewUser')
 }

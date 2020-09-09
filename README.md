@@ -28,7 +28,7 @@ The complete list of all features are located at [`azobu-projects/template`](htt
 - [👤 Authors](#-authors-)
 - [🤝 Contribution](#-contribution-)
 - [🎁 Support](#-support-)
-- [📝 License](#license-)
+- [📝 License](#-license-)
 
 ## 📦 Repositories [🔝](#table-of-contents)
 
@@ -60,7 +60,7 @@ All the backend/API dependencies sorted by priority:
 - [**PostgreSQL**]() — Relational database management system with SQL
   - [**Sequelize**]() — Promise-based **Node.js** Object-Relational Mapper (ORM) for SQL-related databases
   - (Alternative) Other ORM-related:
-    - [**TypeORM**]() — ...
+    - [**TypeORM**]() — Amazing ORM for TypeScript and JavaScript, supports multiple databases, works in several platforms.
 - [**`dotenv-flow`**]() — Loader for multiple environment variable files
 - [**`morgan`**]() — HTTP request logger middleware for **Node.js**
 - [**`multer`**]() — Express middleware for handling `multipart/form-data`
@@ -95,15 +95,15 @@ Alternative or future dependencies:
 - Alternative of REST API:
   - [**GraphQL API**]() — Data query and manipulation language for APIs
     - [**Apollo**]() — Data graph platform to unify APIs, microservices, and databases with GraphQL
-- [**Postman** - The collaboration platform for API development
-  - `newman` - CLI companion for Postman
-- `slug` — Encode string into URL-friendly format
+- [**Postman**]() — The collaboration platform for API development
+  - `newman` — CLI companion for Postman
 - Alternative of **Google Cloud Platform**:
   - [**Amazon Web Services**]() — Reliable, scalable, and inexpensive cloud computing services by Amazon
   - [**Heroku**]() — Cloud platform as a service supporting several programming languages
 - Alternative of mail services:
   - [**Amazon SES**]() — Cost-effective, flexible, and scalable email service by Amazon
   - [**Postmark**]() — Transactional email service with exceptional delivery
+- [**`slug`**]() — Encode string into URL-friendly format
 - [**Jest**]() — Delightful JavaScript testing framework
 - [**Sinon**]() — Standalone test spies, stubs and mocks for JavaScript
 - [**TypeScript**]() — Typed JavaScript at application-scale JavaScript
@@ -124,11 +124,11 @@ Alternative or future dependencies:
 
 Never be dependencies:
 
-- [**Other non-JavaScript family languages**
+- **Other non-JavaScript family languages**
   - Avoid PHP, Python, Ruby, Golang, and others. Template API is scope limited to JavaScript or TypeScript ecosystem. For that other matters it's better to create different repositories.
-- [**Other non-Express frameworks**
+- **Other non-Express frameworks**
   - Avoid Hapi and non-familiar ones, or too raw (such as only `http` package).
-- [**Database as a Service (DBaaS) or unnecessary 3rd party services**
+- **Database as a Service (DBaaS) or unnecessary 3rd party services**
   - Avoid mLab, MongoDB Atlas, Heroku Postgres as they have limitations on free tier
 
 ### Known Limitations

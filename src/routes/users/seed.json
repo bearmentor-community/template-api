@@ -8,14 +8,6 @@
     "bio": "The Administrator"
   },
   {
-    "username": "bot",
-    "name": "Robot",
-    "email": "bot@example.com",
-    "password": "robotrobot0",
-    "avatarUrl": "avatars/default.jpg",
-    "bio": "The Robot"
-  },
-  {
     "username": "ironman",
     "name": "Tony Stark",
     "email": "tony@stark.com",

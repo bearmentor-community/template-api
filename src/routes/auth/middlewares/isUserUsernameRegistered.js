@@ -1,14 +1,14 @@
 const User = require('../../users/model')
 
 module.exports = async (req, res, next) => {
-  const user = await User.findOne({ email: req.body.email })
+  const user = await User.findOne({ username: req.body.username })
 
   if (user) {
-    req.isUserRegistered = true
+    req.isUserUsernameRegistered = true
     req.user = user
     next()
   } else {
-    req.isUserRegistered = false
+    req.isUserUsernameRegistered = false
     next()
   }
 }
