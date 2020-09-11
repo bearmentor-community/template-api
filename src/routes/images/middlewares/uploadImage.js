@@ -1,8 +1,18 @@
 module.exports = async (req, res) => {
-  res.send({
-    message: 'Upload image success',
-    data: {
-      file: req.file
-    }
-  })
+  if (!req.file) {
+    res.send({
+      message: 'Upload image failed',
+      data: {}
+    })
+  } else {
+    res.send({
+      message: 'Upload image success',
+      data: {
+        url:
+          req.file &&
+          `${process.env.EXPRESS_APP_API_URL}/uploads/${req.file.filename}`,
+        file: req.file
+      }
+    })
+  }
 }
